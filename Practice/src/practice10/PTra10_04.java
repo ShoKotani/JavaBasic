@@ -35,10 +35,19 @@ public class PTra10_04 {
 
 				// ★ 配列にした値を、users[カウント]の各フィールドに代入してください
 				// ★ ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
-				users[i].userId = Integer.parseInt("line1[0]");
-				users[i].userNm = line1[1];
-				users[i].mail = line1[2];
-				users[i].password = line1[3];
+
+				// users[i] = new User();
+				// users[i].userId = Integer.parseInt(line1[0]);
+				// users[i].userNm = line1[1];
+				// users[i].mail = line1[2];
+				// users[i].password = line1[3];
+
+				User us = new User();
+				us.userId = Integer.parseInt(line1[0]);
+				us.userNm = line1[1];
+				us.mail = line1[2];
+				us.password = line1[3];
+				users[i] =us;
 
 			}
 		}
